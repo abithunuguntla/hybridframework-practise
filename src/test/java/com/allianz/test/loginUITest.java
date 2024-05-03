@@ -3,14 +3,14 @@ package com.allianz.test;
 import org.testng.annotations.Test;
 
 public class loginUITest {
-	@Test(priority = 1)
+	@Test
 	public void titletes() {
 		System.out.println("title test");
 		
 	}
-	@Test(priority = 2)
+	@Test
 	public void Application() {
-		System.out.println("it will execute this method ");
+		System.out.println("it will execute this method checking ");
 	}
 
 }
