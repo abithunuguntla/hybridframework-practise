@@ -5,8 +5,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.allianz.base.AutomationWrapper;
+import com.allianz.utilis.DataUtils;
 
 public class loginTest extends AutomationWrapper {
+
 	@Test
 	public void validLogin() {
 		driver.findElement(By.name("username")).sendKeys("Admin");
@@ -19,18 +21,18 @@ public class loginTest extends AutomationWrapper {
 		Assert.assertEquals(actualheader, "Dashboard");
 
 	}
-	@Test
-	public void invalidLogin() {
-		driver.findElement(By.name("username")).sendKeys("Adminnnnn");
+
+	@Test(dataProvider = "invaliddata", dataProviderClass = DataUtils.class)
+	public void invalidLogin(String username, String password, String expectederror) {
+		driver.findElement(By.name("username")).sendKeys(username);
 		// password
-		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.name("password")).sendKeys(password);
 		// login
 		driver.findElement(By.xpath("//button[text()=' Login ']")).click();
-		//invalid credentials
+		// invalid credentials
 		String errormessage = driver.findElement(By.xpath("//p[text()='Invalid credentials']")).getText();
-		Assert.assertEquals(errormessage, "Invalid credentials");
+		Assert.assertEquals(errormessage, expectederror);
 
-		
 	}
 
 }
