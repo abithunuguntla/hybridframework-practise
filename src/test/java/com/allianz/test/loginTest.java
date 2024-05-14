@@ -9,7 +9,7 @@ import com.allianz.utilis.DataUtils;
 
 public class loginTest extends AutomationWrapper {
 
-	@Test(dataProvider = "validdata", dataProviderClass = DataUtils.class)
+	@Test(dataProvider = "commonDataProvider", dataProviderClass = DataUtils.class)
 	public void validLogin(String user, String pass , String dashboard) {
 		driver.findElement(By.name("username")).sendKeys(user);
 		// password
@@ -22,7 +22,7 @@ public class loginTest extends AutomationWrapper {
 
 	}
 
-	@Test(dataProvider = "invaliddata", dataProviderClass = DataUtils.class)
+	@Test(dataProvider = "commonDataProvider", dataProviderClass = DataUtils.class)
 	public void invalidLogin(String username, String password, String expectederror) {
 		driver.findElement(By.name("username")).sendKeys(username);
 		// password

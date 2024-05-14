@@ -1,25 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-14T05:16:56 PDT" name="Default suite" finished-at="2024-05-14T05:17:18 PDT" duration-ms="21472">
+  <suite started-at="2024-05-14T12:15:18 PDT" name="Default suite" finished-at="2024-05-14T12:16:25 PDT" duration-ms="66446">
     <groups>
     </groups>
-    <test started-at="2024-05-14T05:16:56 PDT" name="Default test" finished-at="2024-05-14T05:17:18 PDT" duration-ms="21472">
-      <class name="com.allianz.test.AddEmployee">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.AddEmployee@942a29c]" started-at="2024-05-14T05:16:56 PDT" name="setup" finished-at="2024-05-14T05:17:09 PDT" duration-ms="12480" status="PASS">
+    <test started-at="2024-05-14T12:15:18 PDT" name="Default test" finished-at="2024-05-14T12:16:25 PDT" duration-ms="66446">
+      <class name="com.allianz.test.loginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:20 PDT" name="setup" finished-at="2024-05-14T12:15:27 PDT" duration-ms="6675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="uploadinvalidpicture()[pri:0, instance:com.allianz.test.AddEmployee@942a29c]" started-at="2024-05-14T05:17:09 PDT" name="uploadinvalidpicture" finished-at="2024-05-14T05:17:18 PDT" duration-ms="8848" status="PASS">
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:27 PDT" name="invalidLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:15:30 PDT" duration-ms="3141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[paul123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadinvalidpicture -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.AddEmployee@942a29c]" started-at="2024-05-14T05:17:18 PDT" name="teardown" finished-at="2024-05-14T05:17:18 PDT" duration-ms="1" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:30 PDT" name="teardown" finished-at="2024-05-14T12:15:30 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.allianz.test.AddEmployee -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:30 PDT" name="setup" finished-at="2024-05-14T12:15:35 PDT" duration-ms="5481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:35 PDT" name="invalidLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:15:38 PDT" duration-ms="2065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[peter ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[peter123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:38 PDT" name="teardown" finished-at="2024-05-14T12:15:38 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:38 PDT" name="setup" finished-at="2024-05-14T12:15:45 PDT" duration-ms="7695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:45 PDT" name="invalidLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:15:49 PDT" duration-ms="3791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:49 PDT" name="teardown" finished-at="2024-05-14T12:15:49 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:15:49 PDT" name="setup" finished-at="2024-05-14T12:16:02 PDT" duration-ms="13275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:02 PDT" name="invalidLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:16:06 PDT" duration-ms="3301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:06 PDT" name="teardown" finished-at="2024-05-14T12:16:06 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:06 PDT" name="setup" finished-at="2024-05-14T12:16:12 PDT" duration-ms="5837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:12 PDT" name="validLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:16:15 PDT" duration-ms="3282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:15 PDT" name="teardown" finished-at="2024-05-14T12:16:15 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:15 PDT" name="setup" finished-at="2024-05-14T12:16:18 PDT" duration-ms="3296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:18 PDT" name="validLogin" data-provider="commonDataProvider" finished-at="2024-05-14T12:16:25 PDT" duration-ms="6478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.loginTest@242b836]" started-at="2024-05-14T12:16:25 PDT" name="teardown" finished-at="2024-05-14T12:16:25 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.allianz.test.loginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

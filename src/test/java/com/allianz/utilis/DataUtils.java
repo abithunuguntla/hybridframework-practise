@@ -1,5 +1,8 @@
 package com.allianz.utilis;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+
 import org.testng.annotations.DataProvider;
 
 public class DataUtils {
@@ -28,6 +31,16 @@ public class DataUtils {
 			data[0][2] = "Dashboard";			
 			
 			return data;
-			
+	
+	}
+	@DataProvider
+	public Object[][] commonDataProvider(Method mtd) throws IOException
+	{
+		//@test is sheetname
+		String currentsheetname = mtd.getName(); 
+		Object[][] data = ExcelUtils.getsheetintotwodimarray("src\\test\\resources\\test_data\\Hrm_data.xlsx", currentsheetname);
+		return data;
+		
+		
 	}
 }
