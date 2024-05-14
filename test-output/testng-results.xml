@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-14T02:29:32 PDT" name="Default suite" finished-at="2024-05-14T02:29:50 PDT" duration-ms="18259">
+  <suite started-at="2024-05-14T04:47:33 PDT" name="Default suite" finished-at="2024-05-14T04:47:53 PDT" duration-ms="19814">
     <groups>
     </groups>
-    <test started-at="2024-05-14T02:29:32 PDT" name="Default test" finished-at="2024-05-14T02:29:50 PDT" duration-ms="18259">
+    <test started-at="2024-05-14T04:47:33 PDT" name="Default test" finished-at="2024-05-14T04:47:53 PDT" duration-ms="19814">
       <class name="com.allianz.test.AddEmployee">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T02:29:32 PDT" name="setup" finished-at="2024-05-14T02:29:41 PDT" duration-ms="9642" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T04:47:33 PDT" name="setup" finished-at="2024-05-14T04:47:44 PDT" duration-ms="10858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="uploadinvalidpicture()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T02:29:41 PDT" name="uploadinvalidpicture" finished-at="2024-05-14T02:29:50 PDT" duration-ms="8530" status="PASS">
+        <test-method signature="uploadinvalidpicture()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T04:47:44 PDT" name="uploadinvalidpicture" finished-at="2024-05-14T04:47:53 PDT" duration-ms="8817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadinvalidpicture -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T02:29:50 PDT" name="teardown" finished-at="2024-05-14T02:29:50 PDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.allianz.test.AddEmployee@2d710f1a]" started-at="2024-05-14T04:47:53 PDT" name="teardown" finished-at="2024-05-14T04:47:53 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
