@@ -19,4 +19,15 @@ public class DataUtils {
 		return data;
 
 	}
+	@DataProvider
+		public Object[][] validdata(){
+			Object[][] data = new Object[1][3];
+			
+			data[0][0] = "Admin";
+			data[0][1] = "admin123";
+			data[0][2] = "Dashboard";			
+			
+			return data;
+			
+	}
 }

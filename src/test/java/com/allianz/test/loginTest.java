@@ -9,16 +9,16 @@ import com.allianz.utilis.DataUtils;
 
 public class loginTest extends AutomationWrapper {
 
-	@Test
-	public void validLogin() {
-		driver.findElement(By.name("username")).sendKeys("Admin");
+	@Test(dataProvider = "validdata", dataProviderClass = DataUtils.class)
+	public void validLogin(String user, String pass , String dashboard) {
+		driver.findElement(By.name("username")).sendKeys(user);
 		// password
-		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.name("password")).sendKeys(pass);
 		// login
 		driver.findElement(By.xpath("//button[text()=' Login ']")).click();
 
 		String actualheader = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
-		Assert.assertEquals(actualheader, "Dashboard");
+		Assert.assertEquals(actualheader, dashboard);
 
 	}
 
