@@ -5,18 +5,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.allianz.base.AutomationWrapper;
+import com.allianz.pages.Loginpage;
 import com.allianz.utilis.DataUtils;
 
 public class loginTest extends AutomationWrapper {
 
 	@Test(dataProvider = "commonDataProvider", dataProviderClass = DataUtils.class)
 	public void validLogin(String user, String pass , String dashboard) {
-		driver.findElement(By.name("username")).sendKeys(user);
+		Loginpage.enterusername(driver, user);
 		// password
-		driver.findElement(By.name("password")).sendKeys(pass);
+		Loginpage.enterpassword(driver, pass);
 		// login
-		driver.findElement(By.xpath("//button[text()=' Login ']")).click();
-
+		Loginpage.clickonlogin(driver);
 		String actualheader = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
 		Assert.assertEquals(actualheader, dashboard);
 
@@ -24,11 +24,11 @@ public class loginTest extends AutomationWrapper {
 
 	@Test(dataProvider = "commonDataProvider", dataProviderClass = DataUtils.class)
 	public void invalidLogin(String username, String password, String expectederror) {
-		driver.findElement(By.name("username")).sendKeys(username);
+		Loginpage.enterusername(driver, username);
 		// password
-		driver.findElement(By.name("password")).sendKeys(password);
+		Loginpage.enterpassword(driver, password);
 		// login
-		driver.findElement(By.xpath("//button[text()=' Login ']")).click();
+		Loginpage.clickonlogin(driver);
 		// invalid credentials
 		String errormessage = driver.findElement(By.xpath("//p[text()='Invalid credentials']")).getText();
 		Assert.assertEquals(errormessage, expectederror);
