@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="oranger hrm Suite" parallel="tests">
+	<parameter name="browser" value="edge"></parameter>
+  <test thread-count="5" name="UI edge Test">
+    <classes>
+      <class name="com.allianz.test.loginUITest"/>
+      <class name="com.allianz.test.AddEmployee"/>
+       <class name="com.allianz.test.loginTest"/>
+    </classes>
+    </test>
+     
+     <test thread-count="5" name="UI chromeTest">
+		  <parameter name="browser" value="ch"></parameter>
+    <classes>
+      <class name="com.allianz.test.loginUITest"/>
+      <class name="com.allianz.test.AddEmployee"/>
+      </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

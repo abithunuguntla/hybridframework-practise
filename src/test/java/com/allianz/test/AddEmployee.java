@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.allianz.base.AutomationWrapper;
 
 public class AddEmployee extends AutomationWrapper {
-	@Test
+	@Test(groups = {"smoke"})
 	public void uploadinvalidpicture() {
 		File file = new File("src/test/resources/files/sample.txt");
 		String path = file.getAbsolutePath();
